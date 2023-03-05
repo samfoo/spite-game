@@ -1,177 +1,411 @@
 # Spite
 
-Spite is a trick-taking card game for 3 to 9(ish) players based loosely on Big
-two, but which also takes various rules and design ideas from 500, Poker, and
-the Game of Mao.
+Spite is a trick-taking/shedding card game for 3 to 9(ish) players based loosely
+on [Big Two][big2], but which also takes various rules and design ideas from
+[500][500], [Poker][poker], and [Mao][mao].
+
+[big2]: https://en.wikipedia.org/wiki/Big_two
+[500]: https://en.wikipedia.org/wiki/500_(card_game)
+[poker]: https://en.wikipedia.org/wiki/Poker
+[mao]: https://en.wikipedia.org/wiki/Mao_(card_game)
 
 The ruleset of Spite is complicated by design, and players receive penalties
 and rewards for misplaying or identifying others who misplay respectively.
 
-# The Rules
+# Objective
 
-## The Deck
-
-The Spite deck is three "six-handed 500" decks combined (63 cards each, a total
-of 189 cards). Each 63 card deck includes:
-
-* A regular 52 card deck
-* A joker
-* One of each suit 11s
-* One of each suit 12s
-* Two 13s, 13♥ and 13♦ (todo: add red formatting)
-
-Addtionally, several cards - of any suit and face value - which come from a
-deck with a different card-back design should be set aside from the main deck
-for use as "fake jokers".
-
-
-## Playing
-
-The object of Spite is to get rid of all the cards in your hand as soon as
-possible. This is done by playing a series of tricks in which cards may be
-played. Once there is only one player with cards remaining, the round is over.
+In a round of Spite, the winners and losers are determined by the ordering in
+which players got rid of all the cards in their hands, through playing valid
+combinations of cards in a series of tricks. The round is played until there
+is only one player with cards remaining.
 
 The winners and losers from each round receive rewards and penalties for the
-next round.
+next round. Therefore, the typical objective is to finish each round amongst
+the winners, although sometimes players may choose to lose for strategic or
+spiteful reasons.
 
+In keeping with the name and spirit of the game, players should endeavour to
+make spiteful plays whenever possible for maximum comedic effect.
 
-### Starting Play
+# The Deck
 
-At the start of a round, each player is dealt 11 cards and play proceeds
-clockwise from the first player.
+The Spite deck is approximately 3 "six-handed 500" decks combined (63 cards
+each, a total of 189 cards). Each 63-card deck includes:
 
-Control of the first trick is determined by:
+- A regular 52-card deck
+- 11s and 12s of each suit
+- 13♥ and 13♦
+- A joker
 
-- If it is the first round being played, any player who was dealt any 3s must
-  play one of more of them. The first player who plays a 3 receives control. If
-  a player is dealt any 3s at least one of them must be played (unless someone
-  else has played theirs first). If no one has any 3s then move on to 4s, and
-  subsequently 5s and so forth.
-- The player who has the most penalties applied to them (todo: link to
-  explaining penalties). If multiple players have the same penalty value, then
-  the player who lost the round most recently starts.
+Addtionally, approximately 5 cards (of arbitrary suits and face values) from a
+deck with a different card-back design should be set aside from the main deck
+for use as [fake jokers](#fake-jokers).
 
-### Playing Tricks
+# Game Play
 
-On their turn each player must decide to play a card or cards, or pass. Once a
-player passes they may no longer participate in the trick until they "buy back"
-or "BB" (todo: anchor link to rules on BB'ing).
+## The Initial Deal
 
-The laster player to have played before everyone else has passed in that trick
-is the winner of the trick and receives conntrol of the game, allowing them to
-start the next trick. If the player went out by playing the final card in their
-hand while winning the trick, control is giving to the player sitting to the
-winners left (clockwise).
+At the start of a round, each player is dealt 11 cards face down. The top card
+of the deck is revealed as the [bounty card](#the-bounty-card), then game play
+proceeds clockwise from the first player.
 
-Play starts off where any card (or cards) which is high than the current card
-may be played, where 3s are the lowest possible card and 2s are the highest.
+## The First Player
 
+The first player is determined by:
 
-#### Valid Starting Plays
+- If it is the first round being played: any player who was dealt any 3s may
+  play a hand that includes one of more of them. The first player who plays
+  such a hand becomes the lead of the first trick. If no player has any 3s (or
+  those with 3s do not wish to play them) then the round may begin by applying
+  the same rule to 4s, then 5s, and so forth, until someone is willing to lead.
+- Otherwise: the player with the most negative [score](#scoring) shall lead the
+  first trick by playing any valid hand. If there are multiple players with the
+  same negative score, the player who most recently lost a round shall lead.
+
+## Playing Tricks
+
+On their turn, each player must decide to play or pass. Once a player passes,
+they may no longer participate in the trick unless they [buy back](#buy-back).
+
+A player has 5 seconds to make a decision when it is their turn. If the player
+has just picked up extra cards, they get one extra second for each card they
+picked up. Any player at the table may start a countdown, and if the player
+fails to play a valid hand before the countdown finishes then they shall be
+deemed to have passed.
+
+The last player to have played before everyone else has passed in that trick
+is the winner of that trick and shall lead the next trick. If that player has
+gone out by playing their final card(s) while winning the trick, then the next
+player in clockwise sequence shall lead the next trick.
+
+### Valid Leading Hands
 
 - A single card.
-- Two, three, and four of a kind.
-- Poker hands (i.e. exactly five cards) of a straight, full house, flushe and
-  four-of-a-kind.
-- A joker or joker equivalent (five or six of a kind).
+- Two, three, or four cards of the same value (pairs, trips, or quads).
+- Poker hands (i.e. exactly five cards) of a straight, full house, flush, or
+  four-of-a-kind (i.e. four cards of the same value, plus another card of a
+  different value).
+- A [joker hand](#joker-hands).
 
+### Valid Following Hands
 
-#### Continuing the Trick
+After a valid leading hand has been played, all plays in the trick must follow
+the arity, and must be strictly better than the previous hand, unless permitted
+elsewhere within these rules.
 
-After a valid starting play has been placed, all plays in the trick must now
-match the arity, and must be strictly better than the previous play.
+For example, if the leading play was a pair of 5s (5♠, 5♦), subsequent plays
+must be a better pair.
 
-For instance, if the starting play was a pair of 5s (5♠, 5♦), subsequent plays
-must match the arity (i.e. pairs) and must be better than the previous play.
+## Buy Back
 
+If a player who has passed during a trick wishes to re-enter into play of that
+trick, they must "buy back" by picking up additional cards. They must first
+announce "buy back X" or "BB X" where X is the number of cards they intend to
+pick up, play the hand they wish to play, then pick up the additional cards
+from the deck. In other words, the buy-back cards shall not be used to allow
+them to re-enter into play.
 
-#### Misplays
+The number of additional cards they must pick up is a global counter shared by
+all players on the table and follows the [Fibonacci sequence][fib] (1, 1, 2, 3,
+5, 8, ..., and so on). The count resets at the beginning of each round. It is
+a [misplay](#misplays) to buy back for an incorrect number of cards.
 
-A key feature of Spite is that all plays **must** be valid, and any action
-which is not within the rules can be called out as a "misplay" by any other
-player.
+Once a player has bought back into a trick, they may continue to play on their
+subsequent turns within this trick without buying back until they pass again.
 
-A player who has misplayed is penalised by
+If the number of cards in a player's hand reaches or exceeds 20, they instantly
+lose the round.
 
-1. No longer being allowed to play in the current trick.
-2. After the current trick is completed that player must pass their next turn.
-   They may still buy back after that pass if play allows.
-3. Any "fake jokers" that the player has are forfeited.
+[fib]: https://en.wikipedia.org/wiki/Fibonacci_number
 
-Misplays are called out by any player who notices them by saying "Misplay!". If
-the table agrees the call was valid, the misplayer is penalised as described
-above and the player who called the misplay is awarded a "fake joker".
+## Hand Rankings
 
+Individual cards are ranked by their face value, with 3 being the lowest and 2
+being the highest (i.e. 3 to 13, J, Q, K, A, 2), with all suits being equal.
 
-#### Dynamic Restrictions
+A hand consisting of multiple cards of the same value (pairs, trips, quads) are
+ranked by the value as above. Two hands with the same face value are ranked by
+the "similarity" of cards within the hand, from low to high:
 
-Throughout the trick some dynamic restrictions can come into force due to the
-actions of the players. There are two types of dynamic restrictions:
+- Mixed (a hand consisting of both black and red cards)
+- Coloured (a hand consisting of cards of the same colour, but different suits)
+- Suited (a hand consisting of cards of the same suit)
 
-1. Suited-ness (aka. suited)
-2. Consecutive-ness (aka. consec)
+Poker hands shall follow the usual poker ranking rules, except:
 
-Suited-ness occurs when three cards of the same suit have been played. After
-this only cards of that suit may be played (Jokers and 13s may no longer be
-played).
+- Flushes are ranked higher than full houses.
+- Poker hand values are modified to the extent that allows 2 to be the highest
+  card. For example, J-Q-K-A-2 is a valid (and the highest) straight.
 
-Consecutive-ness occurs when three cards which have an equal gap between them
-have been played. The most basic case is when the cards played are of
-consecutive value, e.g. the current trick has played - 3♦, 4♣, 5♣ - the next
-card to be played **must** be a 6 (of any suit).
+### Wildcards
 
-Both suited-ness and consecutive-ness can be in play *at the same time*. So if
-the play has been 8♣, 9♣, 10♣, then the next valid play **must** be an 11♣.
+Whilst 13 is ranked between 12 and J when played in a hand that consists solely
+of 13s, they can also be used as wildcards when played in combination with other
+cards. For example, any card X plus a 13 is considered a pair of Xs.
 
-There is one exception: 13s may not participate in or start the restrictions.
-Because there are only red (♦, ♥) 13s in the deck and because they are
-pseudo-wild, they are not allowed to start or participate in the dynamic
-restrictions. Since they are not playable in consec or suited contexts,
-consecutive card values are 11 -> 12 -> J, not 11 -> 12 -> 13
+When 13s are used in a poker hand, it shall always form the lowest valid hand.
+For example, a full house with 4-4-J-J-13 is always considered to be 4s full of
+jacks; a straight with 8-9-10-11-13 is always considered to be 7-8-9-10-11.
 
-Dynamic restrictions apply to any number-of-a-kind tricks. For example,
-if the play has been pair-9s -> pair-11s -> pair-Js then the next play must be
-pair-Ks.
+A hand that includes one or more 13s is ranked lower than the "natural" version
+of that hand (i.e. without 13s), and a hand with more 13s is ranked lower than
+the same hand with fewer 13s.
 
-##### Special Cases
+## Game Direction
 
-There are two special cases once dynamic rules are in play:
+In addition to the ranking of hands, the game may be played either in the higher
+or lower direction, which dictates whether each subsequent hand in a trick must
+be higher or lower in ranking than the previous hand.
 
-1. For suited-but-not-consecutive tricks, a 2 of the correct suit is unbeatable
-   by any card and must be declared so by saying "Unbeatable" when played. Not
-   saying "unbeatable" is a misplay.
-2. For consecutive tricks, consecutive runs wrap around the highest to the
-   lowest card. So if this play is K -> A -> 2, then the next valid play is a 3.
+Each round starts in the higher direction. When a player plays a hand of natural
+7s (e.g. a single 7, a pair of 7s, etc., without any 13s), the player may choose
+to change the direction by verbally announcing "higher" or "lower". However:
 
+- If a player does not announce a direction, the direction remains unchanged.
+- If a player chooses to announce a direction, it _must_ be the opposite of the
+  current direction. It is a [misplay](#misplays) to announce the same direction
+  as what is currently in play.
+- A player may play a 7 (or a hand of natural 7s with the same arity) on top of
+  a 7 (or a hand of natural 7s), which will immediately reverse the direction,
+  regardless of whether a direction change was made by the previous hand of 7s.
+  It is a [misplay](#misplay) to make any announcement regarding direction in
+  this case.
 
-#### Card Rules Appendix
+If a hand of natural 3s is played while the game is going lower, the direction
+"bounces" back to higher.
 
-- 3 - If the previous play state was "lower", then upon playing a 3 (or any
-  number of threes outside of a poker hand) the direction is reset to "higher".
-- 7 - Upon playing a 7 (or any number of sevens outside of a poker hand, and
-  not in combination with any 13s) a player may choose to say "lower" which
-  inverts card values so that every card played must be **lower** than the
-  previous card rather than higher. This change persists across tricks, but not
-  across rounds.
+## Joker Hands
 
-  If the play direction is already lower, a player may choose instead to say
-  "higher" and reverse in the opposite direction.
+Joker hands can be played without following the arity of the trick when there
+are no [consecutives](#consecutives) in force.
 
-  If the previous player has played 7s (and conseq/suited are not in force)
-  then next player is allowed to play a 7 also but doing so automatically
-  reverses the current direction. When doing so a player **must not** declare a
-  direction because it has automatically been reversed. Declaring the direction
-  is a misplay.
-- 13 - All 13s are "pseudo-wild" and must never be played in any consec or
-  suited tricks. They can be played in combination with another card to form an
-  arity or poker hand.
+A natural joker is the lowest ranked joker hand. It can beat any non-joker hand
+and other natural jokers.
 
-  Consider the following examples:
+Five or more natural cards of the same value are also joker hands, and are
+ranked higher than natural jokers. These joker hands are ranked by hand size,
+and then by numeric value within the same hand size.
 
-  - (13♥, 2♠) is a pair of 2s.
-  - (13♠, 3♦, 4♣, 5♣, 6♠) is a poker straight of (3, 4, 5, 6, 7).
+If a joker hand is played during a trick (except when leading):
 
-  n.b. A 13 in a poker hand **always** forms the lowest possible valid poker
-  hand.
-- Fake jokers - todo: explain them
-- Pure jokers - todo: explain them
+- When the direction is higher, joker hands are the highest ranked hands and
+  can only be beaten by higher jokers.
+- When the direction is lower, joker hands reset the ranking in play such that
+  any valid hand that follows the trick's arity may be played on top of it.
+
+If a joker hand is lead:
+
+- When the direction is higher, joker hands are the highest ranked hands and
+  can only be beaten by higher jokers.
+- When the direction is lower, the arity of the trick is indeterminate. The
+  next player may play any valid hand, and that hand shall determine the arity
+  of the trick.
+
+Joker hands are not allowed to be played as the last or second last play of a
+player, to encourage their usage earlier in the round. If a player plays a joker
+hand as their last or second last play, the play stands but they immediately
+become the loser of the round.
+
+### Fake Jokers
+
+The extra cards with a different card-back design are "fake jokers". A player
+can earn fake jokers by:
+
+- Being the quickest player to call another player's [misplay](#misplays)
+  correctly. If two or more players correctly call a misplay at the same time,
+  a coin flip or other randomisation mechanism shall be used to determine who
+  gets the fake joker. However, fake jokers are not rewarded if a misplay was
+  only called _after_ the table has reached a consensus about the validity of
+  the play in question through discussion.
+- Going out of a round by playing a hand consisting solely of cards with the
+  same value as the [bounty card](#the-bounty-card).
+
+Fake jokers are not part of a player's regular hand. A player is considered to
+have gone out of a round when their regular hand is exhausted, regardless of
+whether they still hold any fake jokers. Fake jokers persist across rounds until
+they are played or lost, at which time they are returned to the fake joker pile
+and may be earned by other players.
+
+Fake jokers can be played either face-up or face-down.
+
+- When played face-up, they will take on their natural face value and can be
+  used whenever that face value is valid.
+- When played face-down during a trick, they reset the ranking in play such that
+  any valid hand that follows the trick's arity may be played on top of it.
+- When played face-up to lead a trick, regardless of current game direction, the
+  arity of the trick is indeterminate. The next player may play any valid hand,
+  and that hand determines the arity of the trick.
+
+Fake jokers are not allowed to be played face-down as the last or second last
+play of a player. The same penalty as playing joker hands as the last or second
+last play shall apply. However, fake jokers may be played face-up as the second
+last play.
+
+If the fake joker pile is exhausted, further actions that would have caused a
+player to earn a fake joker shall cause that player to earn the next card from
+the deck. Such cards are also not part of the player's regular hand, but can
+only be played face-up.
+
+### The Bounty Card
+
+If a player finishes by playing a hand that consists solely of natural cards
+with the same face value as the bounty card, that player "claims the bounty" and
+gains a number of fake jokers equal to the number of bounty cards in their final
+hand. The bounty card is immediately discarded and a new bounty card revealed,
+so that other players may continue to claim the bounty within the same trick.
+
+If a joker is revealed as the bounty card, it shall be shuffled back into the
+deck and a new bounty card is revealed.
+
+## Consecutives
+
+During a trick, when the last 3 hands that were played form certain patterns,
+a consecutive restriction (a.k.a. "consec") shall come into force. Consecs
+only apply to hands that consist of cards of the same value (i.e. single cards,
+pairs, trips, quads, etc., without any 13s) and not to poker hands.
+
+13s and joker hands may not be played when any consec restriction is in force.
+
+There are two orthogonal consec restrictions that may be applied. If, while one
+consec restriction is in force, the pattern for the other consec restriction
+emerges, then both restrictions shall be applied simultaneously from that point.
+
+### Numerical Consec
+
+Numerical consec occurs when three hands with an equal gap between their ranks
+have been played, regardless of suit(s). The most basic case is three hands of
+consecutive numeric value, e.g. if the last 3 hands played were 3♦, 4♣, 5♣ ,
+the next valid hand is a 6 (of any suit).
+
+13s are not part of the ranking when determining numerical consecutiveness, i.e.
+the card ranked immediately after 12 is J.
+
+When numerical consec is in force, the trick may "wrap around" to continue the
+sequence. For example, if the last three hands played were 11, Q, 2, the next
+valid hand is a 5, because the difference between each hand is 3 ranks.
+
+If the game direction is lower:
+
+- Numerical consecs may be formed via bouncing on 3. For example, if the last
+  three hands played were 4, 3, 4, the next valid hand is a 5.
+- If numerical consec is in force when the direction is lower, the direction
+  shall only bounce if a 3 is played. Otherwise, the trick shall wrap around
+  and continue from the top end. For example, if the last three hands played
+  were 8, 6, 4, the next valid hand is a 2.
+
+### Suited Consec
+
+Suited consec occurs when three hands of the same suit(s) have been played.
+From this point, only hands of the same suit(s) can be played.
+
+If the trick's arity is greater than 1, then suited consec refers to hands with
+the same combinations of suits. For example, if three pairs of X♦ X♣ have been
+played, then all subsequent pairs must also consist of ♦ and ♣.
+
+Because joker hands are not allowed during any consec, a 2 is the highest card
+during a suited-but-not-numerical consec when the direction is higher. When a
+player plays the 2 (or 2s), they must announce "unbeatable", otherwise it is a
+[misplay](#misplays).
+
+# Come At Me
+
+During a trick, a player may announce "come at me" when they play a hand, to
+indicate that they think they will win the trick. The trick shall then continue
+as normal (typically at heightened spite levels). If the player who announced
+"come at me" successfully wins the trick, they are rewarded by being allowed to
+view the top several cards of the deck and optionally swap one of them with a
+card in their hand. If they fail to win, they are given [misplay](#misplays)
+penalties. Any number of players are allowed to come-at-me during a trick, but
+only one player can be successful (obviously). A player can also come-at-me
+multiple times within the same trick as more hands are played, and their reward
+or penalty shall be increased for each additional come-at-me.
+
+It is a [misplay](#misplays) to come-at-me when the hand played can only be
+beaten by joker hands (e.g. a single 2 when not under numerical consec) or
+cannot be beaten (e.g. a 2 when under suited consec), or if the player wins
+the trick by playing a [joker hand](#joker-hands).
+
+The base reward for a successful come-at-me is being allowed to view 3 cards.
+The reward increases by 1 for each additional come-at-me by that player during
+the same trick, and decreases by 1 for each successful previous come-at-me by
+that player with no tricks being won by other players in between. For example,
+if a player:
+
+1. Wins a trick during which they come-at-me'ed twice;
+2. Wins a trick without come-at-me;
+3. Wins a trick during which they come-at-me'ed once;
+
+Then their rewards shall be 4 (base reward + 1 for the additinal come-at-me)
+and 2 (base reward - 1 for a subsequent come-at-me trick without a trick won
+by other players in between), respectively.
+
+If the reward becomes negative, that number of [misplay](#misplays) penalties
+shall be applied.
+
+The base penalty for a failed come-at-me is a [misplay](#misplays) penalty, and
+it increases by 1 for each additional come-at-me during the same trick.
+
+# Winners and Losers
+
+## Scoring
+
+At the end of each round, winners and losers will gain and lose points in their
+scores, respectively. The first player to finish their hand gets +2, the second
+player to finish gets +1, the second last player to finish gets -1, and the last
+player (the loser) gets -2. A player's score accumulates across rounds and is
+calculated as follows:
+
+1. Decay their current score by 1 towards 0. For example, if their current score
+   is -3, they shall decay to -2; if their current score is 4, they shall decay
+   to 3.
+2. Reset their score to 0 if they did not finish in the same half as the last
+   round. For example, if there are 6 players at the table and a player finished
+   among the top 3 players last round, and was among the bottom 3 players this
+   round, their score is reset to 0. If there are an odd number of players at
+   the table, the middle player is always considered to be "in the other half".
+3. Add the reward/penalty points from this round.
+
+When a late joiner comes to the table, they become the loser and gets -2, and
+the rankings of other players are shifted up by 1 place.
+
+## Card Swapping
+
+At the beginning of each round, cards are swapped based on the players' scores.
+Players with positive scores shall put down their lowest ranked card(s) into a
+pile, and those with negative scores shall put down their highest ranked card(s)
+into another pile. The absolute value of a player's score indicates the number
+of cards they shall put down.
+
+Then, players with positive scores shall pick up cards from the high cards pile,
+and players with negative scores shall pick up cards from the low cards pile,
+equal to the number of cards they previously put down.
+
+If there is an imbalance between the number of cards in the two piles, random
+cards from the top of the deck shall be added to the short pile. If there are
+excess cards remaining after card swapping has occurred, they shall be revealed
+and discarded.
+
+# Misplays
+
+A key reason for Spite having such a complicated ruleset is to induce misplays.
+A misplay occurs when:
+
+- Playing an invalid/malformed hand;
+- Playing a hand that does not beat the previous hand in the trick;
+- Incorrectly calling "misplay" on another player;
+- Dropping card(s) on any food, liquid, sticky, or greasy substance (also known
+  as a "misplate" if they were dropped onto a plate containing such substances),
+  or dropping card(s) on the floor (except when dealing);
+- and any other misplay situations already mentioned elsewhere in these rules.
+
+Any cards accidentally dropped face-up on the table are considered to have been
+"played" for the purpose of determining misplays. If the dropped cards form a
+valid play then they shall stand and the player is not allowed to rescind them.
+
+If a player has misplayed:
+
+- Any [fake jokers](#fake-jokers) held by that player are immediately forfeited.
+- They are not allowed to play in the current trick, without the possibility of
+  buying back, if the misplay occurred during a trick.
+- They must skip the number of turns in the next trick(s) equal to their misplay
+  penalty count. They may then choose to buy back into the trick.
