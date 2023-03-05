@@ -188,8 +188,8 @@ and then by numeric value within the same hand size.
 
 If a joker hand is played during a trick (except when leading):
 
-- When the direction is higher, joker hands are the highest ranked hands and
-  can only be beaten by higher jokers.
+- When the [game direction](#game-direction) is higher, joker hands can beat any
+  non-joker hands, and can only be beaten by higher joker hands.
 - When the direction is lower, joker hands reset the ranking in play such that
   any valid hand that follows the trick's arity may be played on top of it.
 
@@ -232,9 +232,9 @@ Fake jokers can be played either face-up or face-down.
   used whenever that face value is valid.
 - When played face-down during a trick, they reset the ranking in play such that
   any valid hand that follows the trick's arity may be played on top of it.
-- When played face-up to lead a trick, regardless of current game direction, the
-  arity of the trick is indeterminate. The next player may play any valid hand,
-  and that hand determines the arity of the trick.
+- When played face-up to lead a trick, the arity of the trick is indeterminate,
+  regardless of current [game direction](#game-direction). The next player may
+  play any valid hand, and that hand determines the arity of the trick.
 
 Fake jokers are not allowed to be played face-down as the last or second last
 play of a player. The same penalty as playing joker hands as the last or second
@@ -284,7 +284,7 @@ When numerical consec is in force, the trick may "wrap around" to continue the
 sequence. For example, if the last three hands played were 11, Q, 2, the next
 valid hand is a 5, because the difference between each hand is 3 ranks.
 
-If the game direction is lower:
+If the [game direction](#game-direction) is lower:
 
 - Numerical consecs may be formed via bouncing on 3. For example, if the last
   three hands played were 4, 3, 4, the next valid hand is a 5.
@@ -303,9 +303,9 @@ the same combinations of suits. For example, if three pairs of X♦ X♣ have be
 played, then all subsequent pairs must also consist of ♦ and ♣.
 
 Because joker hands are not allowed during any consec, a 2 is the highest card
-during a suited-but-not-numerical consec when the direction is higher. When a
-player plays the 2 (or 2s), they must announce "unbeatable", otherwise it is a
-[misplay](#misplays).
+during a suited-but-not-numerical consec when the [direction](#game-direction)
+is higher. When a player plays the 2 (or 2s), they must announce "unbeatable",
+otherwise it is a [misplay](#misplays).
 
 # Come At Me
 
