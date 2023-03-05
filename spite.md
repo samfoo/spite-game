@@ -320,10 +320,10 @@ only one player can be successful (obviously). A player can also come-at-me
 multiple times within the same trick as more hands are played, and their reward
 or penalty shall be increased for each additional come-at-me.
 
-It is a [misplay](#misplays) to come-at-me when the hand played can only be
-beaten by joker hands (e.g. a single 2 when not under numerical consec) or
-cannot be beaten (e.g. a 2 when under suited consec), or if the player wins
-the trick by playing a [joker hand](#joker-hands).
+It is a misplay to come-at-me when the hand played can only be beaten by [joker
+hands](#joker-hands) (e.g. a single 2 when not under numerical consec) or cannot
+be beaten (e.g. a 2 when under suited consec), or if the player wins the trick
+by playing a joker hand.
 
 The base reward for a successful come-at-me is being allowed to view 3 cards.
 The reward increases by 1 for each additional come-at-me by that player during
@@ -337,10 +337,14 @@ if a player:
 
 Then their rewards shall be 4 (base reward + 1 for the additinal come-at-me)
 and 2 (base reward - 1 for a subsequent come-at-me trick without a trick won
-by other players in between), respectively.
+by other players in between), respectively. If the reward becomes negative,
+that number of misplay penalties shall be applied.
 
-If the reward becomes negative, that number of [misplay](#misplays) penalties
-shall be applied.
+A player is not required to actually view their reward cards (e.g. they think
+their hand is already optimal), but they must declare what their reward count
+is. An incorrect declaration is a misplay. It is also a misplay to swap more
+than one card from their hand, or discard an incorrect number of cards after
+viewing/swapping.
 
 The base penalty for a failed come-at-me is a [misplay](#misplays) penalty, and
 it increases by 1 for each additional come-at-me during the same trick.
@@ -398,14 +402,25 @@ A misplay occurs when:
   or dropping card(s) on the floor (except when dealing);
 - and any other misplay situations already mentioned elsewhere in these rules.
 
-Any cards accidentally dropped face-up on the table are considered to have been
-"played" for the purpose of determining misplays. If the dropped cards form a
-valid play then they shall stand and the player is not allowed to rescind them.
+Any card(s) dropped face-up on the table (accidentally or otherwise) shall be
+considered to have been "played" for the purpose of determining misplays. If the
+dropped card(s) form a valid play then they shall stand and the player is not
+allowed to rescind them.
+
+If a player plays out of turn, all player(s) who could have played shall still
+have the option to play. If, after those players have played or passed, the
+out-of-turn play is still valid then it shall stand, otherwise it is a misplay.
+The skipped players are strongly encouraged to play hands that would cuase the
+out-of-turn play to become invalid.
 
 If a player has misplayed:
 
-- Any [fake jokers](#fake-jokers) held by that player are immediately forfeited.
+- Any [fake jokers](#fake-jokers) held by that player are immediately forfeited
+  and returned to the fake joker pile.
 - They are not allowed to play in the current trick, without the possibility of
   buying back, if the misplay occurred during a trick.
 - They must skip the number of turns in the next trick(s) equal to their misplay
   penalty count. They may then choose to buy back into the trick.
+
+If a misplay occurs due to incorrect [buy back](#buy back), and the player has
+already seen some or all of the buy-back cards, those cards shall be discarded.
