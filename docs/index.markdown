@@ -1,3 +1,9 @@
+---
+layout: page
+title:  "Spite"
+date:   2023-03-11 16:42:11 +1100
+---
+
 # Spite
 
 Spite is a trick-taking/shedding card game for 3 to 9(ish) players based loosely
