@@ -43,7 +43,7 @@ each, a total of 189 cards). Each 63-card deck includes:
 - 13♥ and 13♦
 - A joker
 
-Addtionally, approximately 5 cards (of arbitrary suits and face values) from a
+Addtionally, at least 5 cards (of arbitrary suits and face values) from a
 deck with a different card-back design should be set aside from the main deck
 for use as [fake jokers](#fake-jokers).
 
@@ -264,12 +264,11 @@ cause that player to earn the next card(s) from the deck. Such cards are also
 not part of the player's regular hand, but can only be played face-up, and are
 not considered fake jokers for the purpose of card ranking.
 
-A hand consisting of 5 or more fake jokers can beat any hand and is not subject
-to any game state restrictions such as [lower](#game-direction) or [consec](#consecutives).
-Such a hand can only be beaten by a hand consisting of a larger number of fake
-jokers regardless of current game direction. The existence of such hands is a
-special case, and does not affect the "unbeatable" announcement when required
-by these rules.
+A hand consisting of 5 or more face-down fake jokers can beat any hand and is
+not subject to any game state restrictions such as [lower](#game-direction) or
+[consec](#consecutives). Such a hand can only be beaten by a hand consisting of
+a larger number of fake jokers, regardless of current game direction. This does
+not affect the requirement for the ["unbeatable"](#suited-consec) announcement.
 
 ### The Bounty Card
 
