@@ -264,6 +264,13 @@ cause that player to earn the next card(s) from the deck. Such cards are also
 not part of the player's regular hand, but can only be played face-up, and are
 not considered fake jokers for the purpose of card ranking.
 
+A hand consisting of 5 or more fake jokers can beat any hand and is not subject
+to any game state restrictions such as [lower](#game-direction) or [consec](#consecutives).
+Such a hand can only be beaten by a hand consisting of a larger number of fake
+jokers regardless of current game direction. The existence of such hands is a
+special case, and does not affect the "unbeatable" announcement when required
+by these rules.
+
 ### The Bounty Card
 
 If a player finishes by playing a hand that consists solely of natural cards
