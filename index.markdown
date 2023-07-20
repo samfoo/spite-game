@@ -259,7 +259,7 @@ last play shall apply. However, fake jokers may be played face-up as the second
 last play.
 
 If the fake joker pile is exhausted, further actions that would have caused a
-player to earn fake joker(s), including any deficit in the current claim, shall
+player to earn fake joker(s), including any shortfall in the current claim, shall
 cause that player to earn the next card(s) from the deck. Such cards are also
 not part of the player's regular hand, but can only be played face-up, and are
 not considered fake jokers for the purpose of card ranking.
