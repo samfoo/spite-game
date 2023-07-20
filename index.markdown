@@ -269,6 +269,7 @@ not subject to any game state restrictions such as [lower](#game-direction) or
 [consec](#consecutives). Such a hand can only be beaten by a hand consisting of
 a larger number of fake jokers, regardless of current game direction. This does
 not affect the requirement for the ["unbeatable"](#suited-consec) announcement.
+A player may not [come-at-me](#come-at-me) when playing such a hand.
 
 ### The Bounty Card
 
@@ -334,41 +335,39 @@ otherwise it is a [misplay](#misplays).
 # Come At Me
 
 During a trick, a player may announce "come at me" when they play a hand, to
-indicate that they think they will win the trick. The trick shall then continue
-as normal (typically at heightened spite levels). If the player who announced
-"come at me" successfully wins the trick, they are rewarded by being allowed to
-view the top several cards of the deck and optionally swap one of them with a
-card in their hand. If they fail to win, they are given [misplay](#misplays)
-penalties. Any number of players are allowed to come-at-me during a trick, but
-only one player can be successful (obviously). A player can also come-at-me
-multiple times within the same trick as more hands are played, and their reward
-or penalty shall be increased for each additional come-at-me.
+indicate that they think they will win the trick. The trick shall continue as
+normal (typically at heightened spite levels). If the player who announced the
+come-at-me successfully wins the trick, they are rewarded by being allowed to
+discard several cards from their hand and draw the same number of cards from
+the deck. If they fail to win, they are given [misplay](#misplays) penalties.
+Any number of players are allowed to come-at-me during a trick, but only one
+player can be successful (_obviously_). A player can also come-at-me multiple
+times within the same trick as more hands are played, and their reward/penalty
+shall be increased for each additional come-at-me.
 
 It is a misplay to come-at-me when the hand played can only be beaten by [joker
 hands](#joker-hands) (e.g. a single 2 when not under numerical consec) or cannot
-be beaten (e.g. a 2 when under suited consec), or if the player wins the trick
-by playing a joker hand.
+be beaten (e.g. a 2 when under suited-but-not-numerical consec), or if the player
+wins the trick by playing a joker hand. It is also a misplay to come-at-me when
+there are only 2 active players.
 
-The base reward for a successful come-at-me is being allowed to view 3 cards.
-The reward increases by 1 for each additional come-at-me by that player during
-the same trick, and decreases by 1 for each successful previous come-at-me by
-that player with no tricks being won by other players in between. For example,
-if a player:
+The base reward for a successful come-at-me is being allowed to discard and
+draw between 1 to 3 cards. The upper bound increases by 1 for each additional
+come-at-me by that player during the same trick, and decreases by 1 for each
+successful previous come-at-me by that player with no tricks being won by other
+players in between. For example, if a player:
 
 1. Wins a trick during which they come-at-me'ed twice;
 2. Wins a trick without come-at-me;
 3. Wins a trick during which they come-at-me'ed once;
 
-Then their rewards shall be 4 (base reward + 1 for the additinal come-at-me)
-and 2 (base reward - 1 for a subsequent come-at-me trick without a trick won
-by other players in between), respectively. If the reward becomes negative,
+Then their reward upper bounds shall be 4 (base reward + 1 for the additinal
+come-at-me) and 2 (base reward - 1 for a subsequent come-at-me without a trick
+won by other players in between), respectively. If the reward becomes negative,
 that number of misplay penalties shall be applied.
 
-A player is not required to actually view their reward cards (e.g. they think
-their hand is already optimal), but they must declare what their reward count
-is. An incorrect declaration is a misplay. It is also a misplay to swap more
-than one card from their hand, or discard an incorrect number of cards after
-viewing/swapping.
+Discarding zero or too many cards, or drawing an incorrect number of cards, is
+a misplay.
 
 The base penalty for a failed come-at-me is a [misplay](#misplays) penalty, and
 it increases by 1 for each additional come-at-me during the same trick.
