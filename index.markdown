@@ -177,8 +177,8 @@ to change the direction by verbally announcing "higher" or "lower". However:
   It is a [misplay](#misplay) to make any announcement regarding direction in
   this case.
 
-If a hand of natural 3s is played while the game is going lower, the direction
-"bounces" back to higher.
+If a hand consisting solely of natural 3s is played while the game is going lower,
+the direction "bounces" back to higher.
 
 ## Joker Hands
 
@@ -214,23 +214,34 @@ become the loser of the round.
 
 ### Fake Jokers
 
-The extra cards with a different card-back design are "fake jokers". A player
-can earn fake jokers by:
+The extra cards with a different card-back design are "fake jokers". Players can
+earn fake jokers by:
 
-- Being the quickest player to call another player's [misplay](#misplays)
-  correctly. If two or more players correctly call a misplay at the same time,
-  a coin flip or other randomisation mechanism shall be used to determine who
-  gets the fake joker. However, fake jokers are not rewarded if a misplay was
-  only called _after_ the table has reached a consensus about the validity of
-  the play in question through discussion.
-- Going out of a round by playing a hand consisting solely of cards with the
-  same value as the [bounty card](#the-bounty-card).
+- Being the quickest to call another player's [misplay](#misplays) correctly.
+  - If the player who misplayed had any fake joker(s) in their possession at
+    the time of misplay, these fake joker(s) shall be transferred to the player
+    who correctly called the misplay as a reward. If they did not possess any
+    fake jokers, the caller shall receive 1 fake joker from the common pile as
+    a reward.
+  - If two or more players correctly call a misplay at the same time, a coin
+    flip or other randomisation mechanism shall be used to determine who shall
+    receive the reward.
+  - However, fake jokers are not awarded if a misplay was only called _after_
+    the table has reached a consensus about the validity of the play in question
+    through discussion. In this case, any fake joker(s) possessed by the player
+    who misplayed shall be returned to the common pile.
+- Going out of a round by playing a hand consisting solely of natural cards with
+  the same value as the [bounty card](#the-bounty-card).
+  - It is a misplay to claim an incorrect number of fake joker(s) from the common
+    pile. If this happens and is called out by another player, the mis-claimed
+    fake joker(s) shall remain in (or be returned to) the common pile and do not
+    form part of the reward that is transferred to the caller.
 
 Fake jokers are not part of a player's regular hand. A player is considered to
 have gone out of a round when their regular hand is exhausted, regardless of
 whether they still hold any fake jokers. Fake jokers persist across rounds until
-they are played or lost, at which time they are returned to the fake joker pile
-and may be earned by other players.
+they are played or lost. Once a fake joker has been played, it shall be returned
+to the fake joker pile and may be earned by other players.
 
 Fake jokers can be played either face-up or face-down.
 
@@ -248,9 +259,10 @@ last play shall apply. However, fake jokers may be played face-up as the second
 last play.
 
 If the fake joker pile is exhausted, further actions that would have caused a
-player to earn a fake joker shall cause that player to earn the next card from
-the deck. Such cards are also not part of the player's regular hand, but can
-only be played face-up.
+player to earn fake joker(s), including any deficit in the current claim, shall
+cause that player to earn the next card(s) from the deck. Such cards are also
+not part of the player's regular hand, but can only be played face-up, and are
+not considered fake jokers for the purpose of card ranking.
 
 ### The Bounty Card
 
