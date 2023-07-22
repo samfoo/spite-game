@@ -1,5 +1,7 @@
 site_name: Spite Game
-site_url: https://www.ifdown.net/spite-game
+site_url: https://www.ifdown.net/spite-game/
 nav:
     - Home: index.md
-theme: windmill
+theme:
+  name: windmill
+  include_sidebar: false
