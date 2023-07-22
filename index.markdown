@@ -218,18 +218,12 @@ The extra cards with a different card-back design are "fake jokers". Players can
 earn fake jokers by:
 
 - Being the quickest to call another player's [misplay](#misplays) correctly.
-  - If the player who misplayed had any fake joker(s) in their possession at
-    the time of misplay, these fake joker(s) shall be transferred to the player
-    who correctly called the misplay as a reward. If they did not possess any
-    fake jokers, the caller shall receive 1 fake joker from the common pile as
-    a reward.
   - If two or more players correctly call a misplay at the same time, a coin
     flip or other randomisation mechanism shall be used to determine who shall
     receive the reward.
-  - However, fake jokers are not awarded if a misplay was only called _after_
+  - However, fake joker(s) are not awarded if a misplay was only called _after_
     the table has reached a consensus about the validity of the play in question
-    through discussion. In this case, any fake joker(s) possessed by the player
-    who misplayed shall be returned to the common pile.
+    through discussion.
 - Going out of a round by playing a hand consisting solely of natural cards with
   the same value as the [bounty card](#the-bounty-card).
   - It is a misplay to claim an incorrect number of fake joker(s) from the common
@@ -243,13 +237,13 @@ whether they still hold any fake jokers. Fake jokers persist across rounds until
 they are played or lost. Once a fake joker has been played, it shall be returned
 to the fake joker pile and may be earned by other players.
 
-Fake jokers can be played either face-up or face-down.
+Fake jokers can be played either face-up or face-down:
 
 - When played face-up, they will take on their natural face value and can be
   used whenever that face value is valid.
 - When played face-down during a trick, they reset the ranking in play such that
   any valid hand that follows the trick's arity may be played on top of it.
-- When played face-up to lead a trick, the arity of the trick is indeterminate,
+- When played face-down to lead a trick, the arity of the trick is indeterminate,
   regardless of current [game direction](#game-direction). The next player may
   play any valid hand, and that hand determines the arity of the trick.
 
@@ -259,17 +253,19 @@ last play shall apply. However, fake jokers may be played face-up as the second
 last play.
 
 If the fake joker pile is exhausted, further actions that would have caused a
-player to earn fake joker(s), including any shortfall in the current claim, shall
-cause that player to earn the next card(s) from the deck. Such cards are also
-not part of the player's regular hand, but can only be played face-up, and are
-not considered fake jokers for the purpose of card ranking.
+player to earn fake joker(s), including any shortfall in the current reward,
+shall cause that player to earn the next card(s) from the deck. Such cards are
+also not part of the player's regular hand, but can only be played face-up as
+their natural face value, and are not considered fake jokers for the purpose of
+card ranking or game restrictions.
 
 A hand consisting of 5 or more face-down fake jokers can beat any hand and is
 not subject to any game state restrictions such as [lower](#game-direction) or
 [consec](#consecutives). Such a hand can only be beaten by a hand consisting of
 a larger number of fake jokers, regardless of current game direction. This does
-not affect the requirement for the ["unbeatable"](#suited-consec) announcement.
-A player may not [come-at-me](#come-at-me) when playing such a hand.
+not affect the requirement to announce ["unbeatable"](#suited-consec) by preceding
+players when appropriate. A player may not [come-at-me](#come-at-me) or announce
+"unbeatable" when playing such a hand.
 
 ### The Bounty Card
 
@@ -438,12 +434,14 @@ out-of-turn play to become invalid.
 
 If a player has misplayed:
 
-- Any [fake jokers](#fake-jokers) held by that player are immediately forfeited
-  and returned to the fake joker pile.
+- Any [fake jokers](#fake-jokers) held by that player are immediately transferred
+  to the player who successfully called the misplay, or returned to the common
+  pile if the misplay was determined through discussion.
 - They are not allowed to play in the current trick, without the possibility of
   buying back, if the misplay occurred during a trick.
 - They must skip the number of turns in the next trick(s) equal to their misplay
-  penalty count. They may then choose to buy back into the trick.
+  penalty count. They may then choose to buy back into the trick, or resume play
+  as normal in the next trick.
 
-If a misplay occurs due to incorrect [buy back](#buy back), and the player has
+If a misplay occurs due to incorrect [buy back](#buy-back), and the player has
 already seen some or all of the buy-back cards, those cards shall be discarded.
