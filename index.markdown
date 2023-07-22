@@ -43,7 +43,7 @@ each, a total of 189 cards). Each 63-card deck includes:
 - 13♥ and 13♦
 - A joker
 
-Addtionally, approximately 5 cards (of arbitrary suits and face values) from a
+Addtionally, at least 5 cards (of arbitrary suits and face values) from a
 deck with a different card-back design should be set aside from the main deck
 for use as [fake jokers](#fake-jokers).
 
@@ -177,8 +177,8 @@ to change the direction by verbally announcing "higher" or "lower". However:
   It is a [misplay](#misplay) to make any announcement regarding direction in
   this case.
 
-If a hand of natural 3s is played while the game is going lower, the direction
-"bounces" back to higher.
+If a hand consisting solely of natural 3s is played while the game is going lower,
+the direction "bounces" back to higher.
 
 ## Joker Hands
 
@@ -214,31 +214,36 @@ become the loser of the round.
 
 ### Fake Jokers
 
-The extra cards with a different card-back design are "fake jokers". A player
-can earn fake jokers by:
+The extra cards with a different card-back design are "fake jokers". Players can
+earn fake jokers by:
 
-- Being the quickest player to call another player's [misplay](#misplays)
-  correctly. If two or more players correctly call a misplay at the same time,
-  a coin flip or other randomisation mechanism shall be used to determine who
-  gets the fake joker. However, fake jokers are not rewarded if a misplay was
-  only called _after_ the table has reached a consensus about the validity of
-  the play in question through discussion.
-- Going out of a round by playing a hand consisting solely of cards with the
-  same value as the [bounty card](#the-bounty-card).
+- Being the quickest to call another player's [misplay](#misplays) correctly.
+  - If two or more players correctly call a misplay at the same time, a coin
+    flip or other randomisation mechanism shall be used to determine who shall
+    receive the reward.
+  - However, fake joker(s) are not awarded if a misplay was only called _after_
+    the table has reached a consensus about the validity of the play in question
+    through discussion.
+- Going out of a round by playing a hand consisting solely of natural cards with
+  the same value as the [bounty card](#the-bounty-card).
+  - It is a misplay to claim an incorrect number of fake joker(s) from the common
+    pile. If this happens and is called out by another player, the mis-claimed
+    fake joker(s) shall remain in (or be returned to) the common pile and do not
+    form part of the reward that is transferred to the caller.
 
 Fake jokers are not part of a player's regular hand. A player is considered to
 have gone out of a round when their regular hand is exhausted, regardless of
 whether they still hold any fake jokers. Fake jokers persist across rounds until
-they are played or lost, at which time they are returned to the fake joker pile
-and may be earned by other players.
+they are played or lost. Once a fake joker has been played, it shall be returned
+to the fake joker pile and may be earned by other players.
 
-Fake jokers can be played either face-up or face-down.
+Fake jokers can be played either face-up or face-down:
 
 - When played face-up, they will take on their natural face value and can be
   used whenever that face value is valid.
 - When played face-down during a trick, they reset the ranking in play such that
   any valid hand that follows the trick's arity may be played on top of it.
-- When played face-up to lead a trick, the arity of the trick is indeterminate,
+- When played face-down to lead a trick, the arity of the trick is indeterminate,
   regardless of current [game direction](#game-direction). The next player may
   play any valid hand, and that hand determines the arity of the trick.
 
@@ -248,9 +253,19 @@ last play shall apply. However, fake jokers may be played face-up as the second
 last play.
 
 If the fake joker pile is exhausted, further actions that would have caused a
-player to earn a fake joker shall cause that player to earn the next card from
-the deck. Such cards are also not part of the player's regular hand, but can
-only be played face-up.
+player to earn fake joker(s), including any shortfall in the current reward,
+shall cause that player to earn the next card(s) from the deck. Such cards are
+also not part of the player's regular hand, but can only be played face-up as
+their natural face value, and are not considered fake jokers for the purpose of
+card ranking or game restrictions.
+
+A hand consisting of 5 or more face-down fake jokers can beat any hand and is
+not subject to any game state restrictions such as [lower](#game-direction) or
+[consec](#consecutives). Such a hand can only be beaten by a hand consisting of
+a larger number of fake jokers, regardless of current game direction. This does
+not affect the requirement to announce ["unbeatable"](#suited-consec) by preceding
+players when appropriate. A player may not [come-at-me](#come-at-me) or announce
+"unbeatable" when playing such a hand.
 
 ### The Bounty Card
 
@@ -316,41 +331,39 @@ otherwise it is a [misplay](#misplays).
 # Come At Me
 
 During a trick, a player may announce "come at me" when they play a hand, to
-indicate that they think they will win the trick. The trick shall then continue
-as normal (typically at heightened spite levels). If the player who announced
-"come at me" successfully wins the trick, they are rewarded by being allowed to
-view the top several cards of the deck and optionally swap one of them with a
-card in their hand. If they fail to win, they are given [misplay](#misplays)
-penalties. Any number of players are allowed to come-at-me during a trick, but
-only one player can be successful (obviously). A player can also come-at-me
-multiple times within the same trick as more hands are played, and their reward
-or penalty shall be increased for each additional come-at-me.
+indicate that they think they will win the trick. The trick shall continue as
+normal (typically at heightened spite levels). If the player who announced the
+come-at-me successfully wins the trick, they are rewarded by being allowed to
+discard several cards from their hand and draw the same number of cards from
+the deck. If they fail to win, they are given [misplay](#misplays) penalties.
+Any number of players are allowed to come-at-me during a trick, but only one
+player can be successful (_obviously_). A player can also come-at-me multiple
+times within the same trick as more hands are played, and their reward/penalty
+shall be increased for each additional come-at-me.
 
 It is a misplay to come-at-me when the hand played can only be beaten by [joker
 hands](#joker-hands) (e.g. a single 2 when not under numerical consec) or cannot
-be beaten (e.g. a 2 when under suited consec), or if the player wins the trick
-by playing a joker hand.
+be beaten (e.g. a 2 when under suited-but-not-numerical consec), or if the player
+wins the trick by playing a joker hand. It is also a misplay to come-at-me when
+there are only 2 active players.
 
-The base reward for a successful come-at-me is being allowed to view 3 cards.
-The reward increases by 1 for each additional come-at-me by that player during
-the same trick, and decreases by 1 for each successful previous come-at-me by
-that player with no tricks being won by other players in between. For example,
-if a player:
+The base reward for a successful come-at-me is being allowed to discard and
+draw between 1 to 3 cards. The upper bound increases by 1 for each additional
+come-at-me by that player during the same trick, and decreases by 1 for each
+successful previous come-at-me by that player with no tricks being won by other
+players in between. For example, if a player:
 
 1. Wins a trick during which they come-at-me'ed twice;
 2. Wins a trick without come-at-me;
 3. Wins a trick during which they come-at-me'ed once;
 
-Then their rewards shall be 4 (base reward + 1 for the additinal come-at-me)
-and 2 (base reward - 1 for a subsequent come-at-me trick without a trick won
-by other players in between), respectively. If the reward becomes negative,
+Then their reward upper bounds shall be 4 (base reward + 1 for the additinal
+come-at-me) and 2 (base reward - 1 for a subsequent come-at-me without a trick
+won by other players in between), respectively. If the reward becomes negative,
 that number of misplay penalties shall be applied.
 
-A player is not required to actually view their reward cards (e.g. they think
-their hand is already optimal), but they must declare what their reward count
-is. An incorrect declaration is a misplay. It is also a misplay to swap more
-than one card from their hand, or discard an incorrect number of cards after
-viewing/swapping.
+Discarding zero or too many cards, or drawing an incorrect number of cards, is
+a misplay.
 
 The base penalty for a failed come-at-me is a [misplay](#misplays) penalty, and
 it increases by 1 for each additional come-at-me during the same trick.
@@ -421,12 +434,14 @@ out-of-turn play to become invalid.
 
 If a player has misplayed:
 
-- Any [fake jokers](#fake-jokers) held by that player are immediately forfeited
-  and returned to the fake joker pile.
+- Any [fake jokers](#fake-jokers) held by that player are immediately transferred
+  to the player who successfully called the misplay, or returned to the common
+  pile if the misplay was determined through discussion.
 - They are not allowed to play in the current trick, without the possibility of
   buying back, if the misplay occurred during a trick.
 - They must skip the number of turns in the next trick(s) equal to their misplay
-  penalty count. They may then choose to buy back into the trick.
+  penalty count. They may then choose to buy back into the trick, or resume play
+  as normal in the next trick.
 
-If a misplay occurs due to incorrect [buy back](#buy back), and the player has
+If a misplay occurs due to incorrect [buy back](#buy-back), and the player has
 already seen some or all of the buy-back cards, those cards shall be discarded.
